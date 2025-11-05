@@ -34,8 +34,8 @@ public class GameManager : MonoBehaviour
         falls++;
     }
 
-    public void NextScene()
+    public void LoadScene(string name)
     {
-        SceneManager.LoadScene("Escena2");
+        SceneManager.LoadScene(name);
     }
 }
