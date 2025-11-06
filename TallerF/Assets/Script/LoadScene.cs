@@ -10,8 +10,17 @@ public class LoadScene : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Jugador alcanzó el trigger de cambio de escena");
+            Debug.Log("Jugador alcanzï¿½ el trigger de cambio de escena");
             GameManager.instance.LoadScene(sceneName);
         }
+
+        
+
     }
+    
+    public void LoaderScenes(string nameScene) 
+    {
+      SceneManager.LoadScene(nameScene);  
+    }
+    
 }
